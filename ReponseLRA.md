@@ -1,1162 +1,492 @@
-grep -R "name" node_modules/**/package.json | cut -d ':' -f3 >> ReponseLRA.md   
+grep -R "_from" node_modules/**/package.json | cut -d ':' -f3 | sort | uniq >> ReponseLRA.md
 
- "acorn-jsx",
- "Ingvar Stepanyan",
- "acorn",
- "Marijn Haverbeke",
- "Ingvar Stepanyan",
- "Adrian Heine",
- "ajv",
- ".tonic_example.js",
- "ansi-escapes",
- "Sindre Sorhus",
- "ansi-regex",
- "Sindre Sorhus",
- "ansi-styles",
- "Sindre Sorhus",
- "anymatch",
- "Elan Shanker",
- "append-transform",
- "James Talmage",
- "archy",
- "James Halliday",
- "arg",
- "argparse",
- "asn1",
- "assert-plus",
- "astral-regex",
- "Kevin Mårtensson",
- "async-hook-domain",
- "asynckit",
- "aws-sign2",
- "@babel/code-frame",
- "source-map",
- "@babel/generator",
- "@babel/helper-function-name",
- "Helper function to change the property 'name' of every function",
- "https
- "https
+ "acorn@6.0.4"
+ "acorn-jsx@5.0.1"
+ "ajv@6.6.2"
+ "ansicolors@0.3.2",
+ "ansi-escapes@3.1.0"
+ "ansi-escapes@3.2.0",
+ "ansi-escapes@4.2.1",
+ "ansi-regex@2.1.1"
+ "ansi-regex@2.1.1",
+ "ansi-regex@3.0.0"
+ "ansi-regex@3.0.0",
+ "ansi-regex@4.0.0"
+ "ansi-regex@4.1.0"
+ "ansi-regex@4.1.0",
+ "ansi-styles@2.2.1",
+ "ansi-styles@3.2.0"
+ "ansi-styles@3.2.1"
+ "ansi-styles@3.2.1",
+ "anymatch@3.1.1"
+ "append-transform@1.0.0"
+ "archy@1.0.0"
+ "arg@4.1.1"
+ "argparse@1.0.9"
+ "arrify@1.0.1",
+ "asn1@0.2.4"
+ "assert-plus@1.0.0"
+ "astral-regex@1.0.0"
+ "astral-regex@1.0.0",
+ "async-hook-domain@1.1.3"
+ "asynckit@0.4.0"
+ "auto-bind@2.1.1",
+ "aws4@1.8.0"
+ "aws-sign2@0.7.0"
+ "babel-code-frame@6.26.0",
+ "@babel/code-frame@7.0.0"
+ "@babel/code-frame@7.5.5"
+ "babel-core@6.26.3",
+ "babel-generator@6.26.1",
+ "@babel/generator@7.7.4"
+ "babel-helper-builder-react-jsx@6.26.0",
  "@babel/helper-function-name@7.7.4"
- "@babel/helper-get-function-arity",
- "@babel/helper-split-export-declaration",
- "@babel/highlight",
- "@babel/parser",
- "@babel/runtime",
- "@babel/template",
- "@babel/code-frame",
- "@babel/traverse",
- "^7.7.4",
- "@babel/types",
- "balanced-match",
- "Julian Gruber",
- "bcrypt-pbkdf",
- "binary-extensions",
- "Sindre Sorhus",
- "bind-obj-methods",
- "brace-expansion",
- "Julian Gruber",
- "braces",
- "browser-process-hrtime",
- "browser-stdout",
- "buffer-from",
- "write-file-atomic",
- "caching-transform",
- "caller-path",
- "Sindre Sorhus",
- "callsites",
- "Sindre Sorhus",
- "camelcase",
- "Sindre Sorhus",
- "caseless",
- "ansi-styles",
- "Sindre Sorhus",
- "supports-color",
- "Sindre Sorhus",
- "chalk",
- "chardet",
- "README.md",
- "chokidar",
- "circular-json",
- "Andrea Giammarchi",
- "cli-cursor",
- "Sindre Sorhus",
- "cliui",
- "cli-width",
- "cobertura-parse",
- "code-point-at",
- "Sindre Sorhus",
- "color-convert",
- "^1.1.1"
- "color-name",
- "A list of color names and its values",
- "git@github.com
-
- "https
- "https
- "https
+ "@babel/helper-get-function-arity@7.7.4"
+ "babel-helpers@6.24.1",
+ "@babel/helper-split-export-declaration@7.7.4"
+ "@babel/highlight@7.0.0"
+ "babel-messages@6.23.0",
+ "@babel/parser@7.7.4"
+ "babel-plugin-syntax-jsx@6.18.0",
+ "babel-plugin-syntax-object-rest-spread@6.13.0",
+ "babel-plugin-transform-es2015-destructuring@6.23.0",
+ "babel-plugin-transform-object-rest-spread@6.26.0",
+ "babel-plugin-transform-react-jsx@6.24.1",
+ "babel-register@6.26.0",
+ "babel-runtime@6.26.0",
+ "@babel/runtime@7.6.3",
+ "@babel/runtime@7.7.4"
+ "babel-template@6.26.0",
+ "@babel/template@7.7.4"
+ "babel-traverse@6.26.0",
+ "@babel/traverse@7.7.4"
+ "babel-types@6.26.0",
+ "@babel/types@7.7.4"
+ "babylon@6.18.0",
+ "balanced-match@1.0.0"
+ "balanced-match@1.0.0",
+ "bcrypt-pbkdf@1.0.2"
+ "binary-extensions@2.0.0"
+ "bind-obj-methods@2.0.0"
+ "brace-expansion@1.1.11"
+ "brace-expansion@1.1.11",
+ "braces@3.0.2"
+ "browser-process-hrtime@1.0.0"
+ "browser-stdout@1.3.1"
+ "buffer-from@1.1.1"
+ "caching-transform@3.0.2"
+ "caller-callsite@2.0.0",
+ "caller-path@0.1.0"
+ "caller-path@2.0.0",
+ "callsites@0.2.0"
+ "callsites@2.0.0",
+ "camelcase@5.3.1"
+ "cardinal@2.1.1",
+ "caseless@0.12.0"
+ "chalk@1.1.3",
+ "chalk@2.3.0"
+ "chalk@2.4.2",
+ "chardet@0.7.0"
+ "chokidar@3.3.0"
+ "ci-info@2.0.0",
+ "circular-json@0.3.3"
+ "cli-cursor@2.1.0"
+ "cli-cursor@2.1.0",
+ "cli-truncate@1.1.0",
+ "cliui@4.1.0"
+ "cliui@5.0.0"
+ "cli-width@2.2.0"
+ "cobertura-parse@1.0.5"
+ "code-point-at@1.1.0"
+ "color-convert@1.9.1"
+ "color-convert@1.9.3",
  "color-name@1.1.3"
- "color-support",
- "commander",
- "commondir",
- "James Halliday",
- "concat-map",
- "James Halliday",
- "convert-source-map",
- "Thorsten Lorenz",
- "core-util-is",
- "minimist",
- "James Halliday",
- "coveralls",
-//elliottcable.name/)",
- "cp-file",
- "Sindre Sorhus",
- "Michael Mayer",
- "cross-spawn",
- "dashdash",
- "debug",
- "decamelize",
- "Sindre Sorhus",
- "deep-is",
- "Thorsten Lorenz",
- "default-require-extensions",
- "James Talmage",
- "delayed-stream",
- "diff-frag",
- "diff",
- "doctrine",
- "Nicholas C. Zakas",
- "Yusuke Suzuki",
- "ecc-jsbn",
- "Jeremie Miller",
- "Jeremie Miller",
- "Ryan Bennett",
- "emoji-regex",
- "Mathias Bynens",
- "error-ex",
- "es6-error",
- "escape-string-regexp",
- "Sindre Sorhus",
- "eslint-config-usecases",
- "js-yaml",
- "eslint",
- "eslint-scope",
- "eslint-visitor-keys",
- "eslint-utils",
- "eslint-visitor-keys",
- "esm",
- "espree",
- "esprima",
- "Ariya Hidayat",
- "Ariya Hidayat",
- "esquery",
- "esrecurse",
- "Yusuke Suzuki",
- "estraverse",
- "Yusuke Suzuki",
- "esutils",
- "Yusuke Suzuki",
- "events-to-array",
- "external-editor",
- "extsprintf",
- "fast-deep-equal",
- "fast-json-stable-stringify",
- "James Halliday",
- "fast-levenshtein",
- "figures",
- "Sindre Sorhus",
- "file-entry-cache",
- "Roy Riojas",
- "fill-range",
- "find-cache-dir",
- "findit",
- "James Halliday",
- "find-up",
- "Sindre Sorhus",
- "flat-cache",
- "Roy Riojas",
- "flow-parser",
- "Flow Team",
- "flow-remove-types",
- "Flow Team",
- "cross-spawn",
- "foreground-child",
- "forever-agent",
- "combined-stream",
- "form-data",
- "pkgfiles --sort=name",
- "fsevents",
- "Philipp Dunkel",
- "Ben Noordhuis",
- "Elan Shankar",
- "Miroslav Bajtoš",
- "Paul Miller",
- "fs-exists-cached",
- "fs.realpath",
- "functional-red-black-tree",
- "function-loop",
- "get-caller-file",
- "getpass",
- "globals",
- "Sindre Sorhus",
- "glob",
- "glob-parent",
-
- "graceful-fs",
- "growl",
- "handlebars",
- "handlebars",
- "README.md",
- "har-schema",
- "ajv",
- ".tonic_example.js",
- "fast-deep-equal",
- "json-schema-traverse",
- "har-validator",
- "has-flag",
- "Sindre Sorhus",
- "hasha",
- "Sindre Sorhus",
- "he",
- "Mathias Bynens",
- "hoek",
- "hosted-git-info",
- "http-signature",
- "iconv-lite",
- "ignore",
- "imurmurhash",
- "Jens Taylor",
- "inflight",
- "inherits",
- "ansi-regex",
- "Sindre Sorhus",
- "strip-ansi",
- "Sindre Sorhus",
- "inquirer",
- "is-arrayish",
- "isarray",
- "Julian Gruber",
- "is-binary-path",
- "Sindre Sorhus",
- "punycode",
- "Mathias Bynens",
- "Mathias Bynens",
- "isemail",
- "isexe",
- "is-extglob",
- "is-fullwidth-code-point",
- "Sindre Sorhus",
- "is-glob",
- "is-number",
- "is-promise",
- "is-stream",
- "Sindre Sorhus",
- "isstream",
- "istanbul-lib-coverage",
- "istanbul-lib-hook",
- "semver",
- "istanbul-lib-instrument",
- "rimraf",
- "istanbul-lib-processinfo",
- "has-flag",
- "Sindre Sorhus",
- "supports-color",
- "Sindre Sorhus",
- "istanbul-lib-report",
- "rimraf",
- "istanbul-lib-source-maps",
- "istanbul-reports",
- "is-typedarray",
- "jackspeak",
- "joi",
- "jsbn",
- "jsesc",
- "Mathias Bynens",
- "json-parse-better-errors",
- "Kat Marchán",
- "json-schema",
- "Kris Zyp", "email"
- "json-schema-traverse",
- "json-stable-stringify-without-jsonify",
- "James Halliday",
- "json-stringify-safe",
- "jsprim",
- "js-tokens",
- "js-yaml",
- "lcov-parse",
- "levn",
- "pify",
- "Sindre Sorhus",
- "load-json-file",
- "Sindre Sorhus",
- "locate-path",
- "Sindre Sorhus",
- "lodash.flattendeep",
- "lodash",
- "log-driver",
- "Gregg Caines",
- "lru-cache",
- "make-dir",
- "Sindre Sorhus",
- "make-error",
- "merge-source-map",
- "mime-db",
- "mime-types",
- "mimic-fn",
- "Sindre Sorhus",
-
-
- "minimatch",
- "minimist",
- "James Halliday",
- "yallist",
- "minipass",
- "mkdirp",
- "commander",
- "debug",
- "diff",
- "glob",
- "ms",
- "mocha",
-//github.com/oker1)"
- "ms",
- "mute-stream",
- "natural-compare",
- "README.md",
- "neo-async",
- "nested-error-stacks",
- "nice-try",
- "node-modules-regexp",
- "James Talmage",
- "normalize-package-data",
- "normalize-path",
- "number-is-nan",
- "Sindre Sorhus",
- "resolve-from",
- "Sindre Sorhus",
- "rimraf",
- "nyc",
- "Isaac Schlueter",
- "Mark Wubben",
- "James Talmage",
- "Krishnan Anantheswaran",
- "^1.6.1",
- "object-assign",
- "Sindre Sorhus",
- "once",
- "onetime",
- "Sindre Sorhus",
- "opener",
- "wordwrap",
- "James Halliday",
- "optimist",
- "James Halliday",
- "optionator",
- "os-homedir",
- "Sindre Sorhus",
- "os-tmpdir",
- "Sindre Sorhus",
- "own-or-env",
- "own-or",
- "package-hash",
- "parse-json",
- "Sindre Sorhus",
- "path-exists",
- "Sindre Sorhus",
- "path-is-absolute",
- "Sindre Sorhus",
- "path-is-inside",
- "path-key",
- "Sindre Sorhus",
- "path-parse",
- "pify",
- "Sindre Sorhus",
- "path-type",
- "Sindre Sorhus",
- "performance-now",
- "picomatch",
- "pify",
- "Sindre Sorhus",
- "pirates",
- "Ari Porad",
- "pkg-dir",
- "Sindre Sorhus",
- "p-limit",
- "Sindre Sorhus",
- "p-locate",
- "Sindre Sorhus",
- "pluralize",
- "Blake Embrey",
- "Readme.md",
- "prelude-ls",
- "process-nextick-args",
- "progress",
- "pseudomap",
- "psl",
- "Domain name parser based on the Public Suffix List",
- "p-try",
- "Sindre Sorhus",
- "punycode",
- "Mathias Bynens",
- "Mathias Bynens",
- "John-David Dalton",
- "qs",
- "Jordan Harband",
- "readable-stream",
- "readdirp",
- "read-pkg",
- "Sindre Sorhus",
- "read-pkg-up",
- "Sindre Sorhus",
- "regenerator-runtime",
- "regexpp",
-dts"
- "release-zalgo",
- "aws4",
- "combined-stream",
- "extend",
- "Jordan Harband",
- "mime-db",
- "mime-types",
- "oauth-sign",
- "safe-buffer",
- "Feross Aboukhadijeh",
- "Jeremy Stashewsky",
- "Alexander Savin",
- "Ian Livingstone",
- "Ivan Nikulin",
- "Lalit Kapoor",
- "Sam Thompson",
- "Sebastian Mayr",
- "tough-cookie",
- "uuid",
- "request",
- "require-directory",
- "Troy Goode",
- "require-main-filename",
- "shim for require.main.filename() that works in as many environments as possible",
- "git+ssh
- "https
- "https
- "https
+ "color-name@1.1.3",
+ "color-support@1.1.3"
+ "combined-stream@1.0.7"
+ "commander@2.11.0"
+ "commander@2.13.0"
+ "commander@2.20.3"
+ "commondir@1.0.1"
+ "concat-map@0.0.1"
+ "concat-map@0.0.1",
+ "convert-source-map@1.6.0",
+ "convert-source-map@1.7.0"
+ "core-js@2.6.10",
+ "core-util-is@1.0.2"
+ "coveralls@3.0.0"
+ "coveralls@3.0.8"
+ "cp-file@6.2.0"
+ "cross-spawn@4.0.2"
+ "cross-spawn@6.0.5"
+ "csstype@2.6.7",
+ "dashdash@1.14.1"
+ "debug@2.6.9"
+ "debug@2.6.9",
+ "debug@3.1.0"
+ "debug@4.1.1"
+ "decamelize@1.2.0"
+ "deep-is@0.1.3"
+ "default-require-extensions@2.0.0"
+ "delayed-stream@1.0.0"
+ "detect-indent@4.0.0",
+ "diff@1.4.0"
+ "diff@3.5.0"
+ "diff@4.0.1"
+ "diff-frag@1.0.1"
+ "doctrine@2.1.0"
+ "ecc-jsbn@0.1.2"
+ "emoji-regex@7.0.3"
+ "emoji-regex@7.0.3",
+ "error-ex@1.3.2"
+ "es6-error@4.1.1"
+ "escape-string-regexp@1.0.5"
+ "escape-string-regexp@1.0.5",
+ "eslint@5.11.0"
+ "eslint-config-usecases@1.2.2"
+ "eslint-scope@4.0.0"
+ "eslint-utils@1.4.3"
+ "eslint-visitor-keys@1.0.0"
+ "eslint-visitor-keys@1.1.0"
+ "esm@3.2.25"
+ "espree@5.0.0"
+ "esprima@4.0.1"
+ "esprima@4.0.1",
+ "esquery@1.0.1"
+ "esrecurse@4.2.1"
+ "estraverse@4.2.0"
+ "esutils@2.0.2"
+ "esutils@2.0.3",
+ "events-to-array@1.1.2"
+ "events-to-array@1.1.2",
+ "extend@3.0.2"
+ "external-editor@3.0.3"
+ "extsprintf@1.3.0"
+ "fast-deep-equal@2.0.1"
+ "fast-json-stable-stringify@2.0.0"
+ "fast-levenshtein@2.0.6"
+ "figures@2.0.0"
+ "file-entry-cache@2.0.0"
+ "fill-range@7.0.1"
+ "find-cache-dir@2.1.0"
+ "findit@2.0.0"
+ "find-up@3.0.0"
+ "flat-cache@1.3.4"
+ "flow-parser@0.112.0"
+ "flow-remove-types@2.112.0"
+ "foreground-child@1.5.6"
+ "forever-agent@0.6.1"
+ "form-data@2.3.3"
+ "fsevents@2.1.2"
+ "fs-exists-cached@1.0.0"
+ "fs.realpath@1.0.0"
+ "functional-red-black-tree@1.0.1"
+ "function-loop@1.0.2"
+ "get-caller-file@2.0.5"
+ "getpass@0.1.7"
+ "glob@7.1.2"
+ "glob@7.1.3"
+ "glob@7.1.6"
+ "globals@11.9.0"
+ "globals@9.18.0",
+ "glob-parent@5.1.0"
+ "graceful-fs@4.1.15"
+ "growl@1.10.3"
+ "handlebars@4.5.3"
+ "har-schema@2.0.0"
+ "har-validator@5.1.3"
+ "has-ansi@2.0.0",
+ "has-flag@2.0.0"
+ "has-flag@3.0.0"
+ "has-flag@3.0.0",
+ "hasha@3.0.0"
+ "he@1.1.1"
+ "hoek@6.1.2"
+ "home-or-tmp@2.0.0",
+ "hosted-git-info@2.8.5"
+ "http-signature@1.2.0"
+ "iconv-lite@0.4.24"
+ "ignore@4.0.6"
+ "import-jsx@2.0.0",
+ "imurmurhash@0.1.4"
+ "inflight@1.0.6"
+ "inherits@2.0.3"
+ "ink@2.5.0",
+ "inquirer@6.2.1"
+ "invariant@2.2.4",
+ "isarray@1.0.0"
+ "is-arrayish@0.2.1"
+ "is-binary-path@2.1.0"
+ "is-ci@2.0.0",
+ "isemail@3.2.0"
+ "isexe@2.0.0"
+ "is-extglob@2.1.1"
+ "is-finite@1.0.2",
+ "is-fullwidth-code-point@1.0.0"
+ "is-fullwidth-code-point@2.0.0"
+ "is-fullwidth-code-point@2.0.0",
+ "is-glob@4.0.1"
+ "is-number@7.0.0"
+ "is-promise@2.1.0"
+ "isstream@0.1.2"
+ "is-stream@1.1.0"
+ "istanbul-lib-coverage@2.0.5"
+ "istanbul-lib-hook@2.0.7"
+ "istanbul-lib-instrument@3.3.0"
+ "istanbul-lib-processinfo@1.0.0"
+ "istanbul-lib-report@2.0.8"
+ "istanbul-lib-source-maps@3.0.6"
+ "istanbul-reports@2.2.6"
+ "is-typedarray@1.0.0"
+ "jackspeak@1.4.0"
+ "joi@14.3.0"
+ "jsbn@0.1.1"
+ "jsesc@1.3.0",
+ "jsesc@2.5.2"
+ "json5@0.5.1",
+ "json-parse-better-errors@1.0.2"
+ "json-schema@0.2.3"
+ "json-schema-traverse@0.4.1"
+ "json-stable-stringify-without-jsonify@1.0.1"
+ "json-stringify-safe@5.0.1"
+ "jsprim@1.4.1"
+ "js-tokens@3.0.2",
+ "js-tokens@4.0.0"
+ "js-yaml@3.13.1"
+ "lcov-parse@0.0.10"
+ "lcov-parse@1.0.0"
+ "levn@0.3.0"
+ "load-json-file@4.0.0"
+ "locate-path@3.0.0"
+ "lodash@4.17.15"
+ "lodash@4.17.15",
+ "lodash.flattendeep@4.4.0"
+ "lodash.throttle@4.1.1",
+ "log-driver@1.2.5"
+ "log-driver@1.2.7"
+ "log-update@3.3.0",
+ "loose-envify@1.4.0",
+ "lru-cache@4.1.5"
+ "make-dir@2.1.0"
+ "make-error@1.3.5"
+ "merge-source-map@1.1.0"
+ "mime-db@1.30.0"
+ "mime-db@1.37.0"
+ "mime-types@2.1.17"
+ "mime-types@2.1.21"
+ "mimic-fn@1.2.0"
+ "mimic-fn@1.2.0",
+ "minimatch@3.0.4"
+ "minimatch@3.0.4",
+ "minimist@0.0.8"
+ "minimist@0.0.8",
+ "minimist@1.2.0"
+ "minipass@3.0.1",
+ "minipass@3.1.1"
+ "mkdirp@0.5.1"
+ "mkdirp@0.5.1",
+ "mocha@5.0.5"
+ "ms@2.0.0"
+ "ms@2.0.0",
+ "ms@2.1.1"
+ "ms@2.1.2",
+ "mute-stream@0.0.7"
+ "natural-compare@1.4.0"
+ "neo-async@2.6.1"
+ "nested-error-stacks@2.1.0"
+ "nice-try@1.0.5"
+ "node-modules-regexp@1.0.0"
+ "normalize-package-data@2.5.0"
+ "normalize-path@3.0.0"
+ "number-is-nan@1.0.1"
+ "number-is-nan@1.0.1",
+ "nyc@14.1.1"
+ "oauth-sign@0.9.0"
+ "object-assign@4.1.1"
+ "object-assign@4.1.1",
+ "once@1.4.0"
+ "onetime@2.0.1"
+ "onetime@2.0.1",
+ "opener@1.5.1"
+ "optimist@0.6.1"
+ "optionator@0.8.2"
+ "os-homedir@1.0.2"
+ "os-homedir@1.0.2",
+ "os-tmpdir@1.0.2"
+ "os-tmpdir@1.0.2",
+ "own-or@1.0.0"
+ "own-or-env@1.0.1"
+ "package-hash@3.0.0"
+ "parse-json@4.0.0"
+ "path-exists@3.0.0"
+ "path-is-absolute@1.0.1"
+ "path-is-absolute@1.0.1",
+ "path-is-inside@1.0.2"
+ "path-key@2.0.1"
+ "path-parse@1.0.6"
+ "path-type@3.0.0"
+ "performance-now@2.1.0"
+ "picomatch@2.1.1"
+ "pify@3.0.0"
+ "pify@4.0.1"
+ "pirates@3.0.2"
+ "pkg-dir@3.0.0"
+ "p-limit@2.2.1"
+ "p-locate@3.0.0"
+ "pluralize@7.0.0"
+ "prelude-ls@1.1.2"
+ "private@0.1.8",
+ "process-nextick-args@2.0.1"
+ "progress@2.0.3"
+ "prop-types@15.7.2",
+ "pseudomap@1.0.2"
+ "psl@1.1.31"
+ "p-try@2.2.0"
+ "punycode@1.4.1"
+ "punycode@2.1.1"
+ "punycode@2.1.1",
+ "qs@6.5.2"
+ "react@16.10.2",
+ "react-is@16.10.2",
+ "react-reconciler@0.21.0",
+ "readable-stream@2.3.6"
+ "readdirp@3.2.0"
+ "read-pkg@3.0.0"
+ "read-pkg-up@4.0.0"
+ "redeyed@2.1.1",
+ "regenerator-runtime@0.11.1",
+ "regenerator-runtime@0.13.3"
+ "regenerator-runtime@0.13.3",
+ "regexpp@2.0.1"
+ "release-zalgo@1.0.0"
+ "repeating@2.0.1",
+ "request@2.88.0"
+ "require-directory@2.1.1"
  "require-main-filename@2.0.0"
- "require-uncached",
- "Sindre Sorhus",
- "resolve-from",
- "Sindre Sorhus",
- "resolve",
- "James Halliday",
- "browser_field",
- "invalid main",
- "monorepo-symlink-test",
- "@my-scope/package-a",
- "@my-scope/package-b",
- "mylib",
- "restore-cursor",
- "Sindre Sorhus",
- "rimraf",
- "run-async",
- "rxjs/ajax",
- "rxjs/internal-compatibility",
- "rxjs/operators",
- "rxjs",
- "Ben Lesh",
- "Paul Taylor",
- "Jeff Cross",
- "Matthew Podwysocki",
- "OJ Kwon",
- "Andre Staltz",
- "rxjs/ajax",
- "rxjs/internal-compatibility",
- "rxjs/operators",
- "rxjs/testing",
- "rxjs/webSocket",
- "rxjs/testing",
- "rxjs/webSocket",
- "safe-buffer",
- "Feross Aboukhadijeh",
- "safer-buffer",
- "Nikita Skovoroda",
- "sax",
- "semver",
- "set-blocking",
- "shebang-command",
- "Kevin Martensson",
- "shebang-regex",
- "Sindre Sorhus",
- "signal-exit",
- "slice-ansi",
- "source-map",
- "source-map-support",
- "spawn-wrap",
- "spdx-correct",
- "spdx-exceptions",
- "spdx-expression-parse",
- "spdx-license-ids",
- "sprintf-js",
- "README.md",
- "sshpk",
- "Dave Eddy",
- "Mark Cavage",
- "Alex Wilson",
- "stack-utils",
- "James Talmage",
- "string_decoder",
- "string-width",
- "Sindre Sorhus",
- "strip-ansi",
- "Sindre Sorhus",
- "strip-bom",
- "Sindre Sorhus",
- "strip-json-comments",
- "Sindre Sorhus",
- "supports-color",
- "Sindre Sorhus",
- "Gajus Kuizinas",
- "^2.0.4",
- "table",
- "debug",
- "diff",
- "ms",
- "tap-mocha-reporter",
- "ansicolors",
- "Thorsten Lorenz",
- "ansicolors",
- "ansi-escapes",
- "Sindre Sorhus",
- "ansi-escapes",
- "ansi-regex",
- "Sindre Sorhus",
- "Sindre Sorhus",
- "Joshua Appelman",
- "JD Ballard",
- "ansi-regex",
- "ansi-styles",
- "Sindre Sorhus",
- "Sindre Sorhus",
- "Joshua Appelman",
- "ansi-styles",
- "arrify",
- "Sindre Sorhus",
- "arrify",
- "astral-regex",
- "Kevin Mårtensson",
- "astral-regex",
- "auto-bind",
- "Sindre Sorhus",
- "auto-bind",
- "babel-code-frame",
- "Sebastian McKenzie",
- "babel-code-frame",
- "source-map",
- "Nick Fitzgerald",
- "Tobias Koppers",
- "Duncan Beevers",
- "Stephen Crane",
- "Ryan Seddon",
- "Miles Elam",
- "Mihai Bazon",
- "Michael Ficarra",
- "Todd Wolfson",
- "Alexander Solovyov",
- "Felix Gnass",
- "Conrad Irwin",
- "usrbincc",
- "David Glasser",
- "Chase Douglas",
- "Evan Wallace",
- "Heather Arthur",
- "Hugh Kennedy",
- "David Glasser",
- "Simon Lydell",
- "Jmeas Smith",
- "Michael Z Goddard",
- "azu",
- "John Gozde",
- "Adam Kirkton",
- "Chris Montgomery",
- "J. Ryan Stinnett",
- "Jack Herrington",
- "Chris Truter",
- "Daniel Espeset",
- "Jamie Wong",
- "Eddy Bruël",
- "Hawken Rives",
- "Gilad Peleg",
- "djchie",
- "Gary Ye",
- "Nicolas Lalevée",
- "source-map",
- "babel-core",
- "Sebastian McKenzie",
- "babel-core",
- "source-map",
- "Nick Fitzgerald",
- "Tobias Koppers",
- "Duncan Beevers",
- "Stephen Crane",
- "Ryan Seddon",
- "Miles Elam",
- "Mihai Bazon",
- "Michael Ficarra",
- "Todd Wolfson",
- "Alexander Solovyov",
- "Felix Gnass",
- "Conrad Irwin",
- "usrbincc",
- "David Glasser",
- "Chase Douglas",
- "Evan Wallace",
- "Heather Arthur",
- "Hugh Kennedy",
- "David Glasser",
- "Simon Lydell",
- "Jmeas Smith",
- "Michael Z Goddard",
- "azu",
- "John Gozde",
- "Adam Kirkton",
- "Chris Montgomery",
- "J. Ryan Stinnett",
- "Jack Herrington",
- "Chris Truter",
- "Daniel Espeset",
- "Jamie Wong",
- "Eddy Bruël",
- "Hawken Rives",
- "Gilad Peleg",
- "djchie",
- "Gary Ye",
- "Nicolas Lalevée",
- "source-map",
- "babel-generator",
- "Sebastian McKenzie",
- "babel-generator",
- "babel-helper-builder-react-jsx",
- "babel-helper-builder-react-jsx",
- "babel-helpers",
- "Sebastian McKenzie",
- "babel-helpers",
- "babel-messages",
- "Sebastian McKenzie",
- "babel-messages",
- "babel-plugin-syntax-jsx",
- "babel-plugin-syntax-jsx",
- "babel-plugin-syntax-object-rest-spread",
- "babel-plugin-syntax-object-rest-spread",
- "babel-plugin-transform-es2015-destructuring",
- "babel-plugin-transform-es2015-destructuring",
- "babel-plugin-transform-object-rest-spread",
- "babel-plugin-transform-object-rest-spread",
- "babel-plugin-transform-react-jsx",
- "babel-plugin-transform-react-jsx",
- "source-map",
- "Nick Fitzgerald",
- "Tobias Koppers",
- "Duncan Beevers",
- "Stephen Crane",
- "Ryan Seddon",
- "Miles Elam",
- "Mihai Bazon",
- "Michael Ficarra",
- "Todd Wolfson",
- "Alexander Solovyov",
- "Felix Gnass",
- "Conrad Irwin",
- "usrbincc",
- "David Glasser",
- "Chase Douglas",
- "Evan Wallace",
- "Heather Arthur",
- "Hugh Kennedy",
- "David Glasser",
- "Simon Lydell",
- "Jmeas Smith",
- "Michael Z Goddard",
- "azu",
- "John Gozde",
- "Adam Kirkton",
- "Chris Montgomery",
- "J. Ryan Stinnett",
- "Jack Herrington",
- "Chris Truter",
- "Daniel Espeset",
- "Jamie Wong",
- "Eddy Bruël",
- "Hawken Rives",
- "Gilad Peleg",
- "djchie",
- "Gary Ye",
- "Nicolas Lalevée",
- "source-map",
- "source-map-support",
- "source-map-support",
- "babel-register",
- "Sebastian McKenzie",
- "babel-register",
- "regenerator-runtime",
- "Ben Newman",
- "regenerator-runtime",
- "@babel/runtime",
- "Sebastian McKenzie",
- "@babel/runtime",
- "babel-runtime",
- "Sebastian McKenzie",
- "babel-runtime",
- "babel-template",
- "Sebastian McKenzie",
- "babel-template",
- "babel-traverse",
- "Sebastian McKenzie",
- "babel-traverse",
- "babel-types",
- "Sebastian McKenzie",
- "babel-types",
- "babylon",
- "Sebastian McKenzie",
- "babylon",
- "balanced-match",
- "Julian Gruber",
- "balanced-match",
- "brace-expansion",
- "Julian Gruber",
- "brace-expansion",
- "caller-callsite",
- "Sindre Sorhus",
- "caller-callsite",
- "caller-path",
- "Sindre Sorhus",
- "caller-path",
- "callsites",
- "Sindre Sorhus",
- "callsites",
- "cardinal",
- "Thorsten Lorenz",
- "cardinal",
- "chalk",
- "Sindre Sorhus",
- "Joshua Appelman",
- "JD Ballard",
- "chalk",
- "ci-info",
- "Thomas Watson Steen",
- "ci-info",
- "cli-cursor",
- "Sindre Sorhus",
- "cli-cursor",
- "cli-truncate",
- "Sindre Sorhus",
- "cli-truncate",
- "color-convert",
- "Heather Arthur",
- "1.1.3"
- "color-convert",
-
- "color-name@1.1.3",
- "color-name@1.1.3",
- "/color-name",
- "color-name@1.1.3",
- "color-name",
- "color-name",
- "https
- "DY",
- "https
- "A list of color names and its values",
- "https
-
- "color-name",
- "git+ssh
- "concat-map",
- "James Halliday",
- "concat-map",
- "safe-buffer",
- "Feross Aboukhadijeh",
- "safe-buffer",
- "convert-source-map",
- "Thorsten Lorenz",
- "convert-source-map",
- "core-js",
- "core-js",
- "coveralls",
-//elliottcable.name/)",
- "csstype",
- "Fredrik Nicol",
- "csstype",
- "debug",
- "TJ Holowaychuk",
- "Nathan Rajlich",
- "Andrew Rhyne",
- "debug",
- "detect-indent",
- "Sindre Sorhus",
- "detect-indent",
- "emoji-regex",
- "Mathias Bynens",
- "emoji-regex",
- "escape-string-regexp",
- "Sindre Sorhus",
- "Sindre Sorhus",
- "Joshua Boy Nicolai Appelman",
- "escape-string-regexp",
- "esprima",
- "Ariya Hidayat",
- "Ariya Hidayat",
- "esprima",
- "esutils",
- "Yusuke Suzuki",
- "esutils",
- "events-to-array",
- "Isaac Z. Schlueter",
- "events-to-array",
- "globals",
- "Sindre Sorhus",
- "globals",
- "glob",
- "has-ansi",
- "Sindre Sorhus",
- "Sindre Sorhus",
- "Joshua Appelman",
- "has-ansi",
- "has-flag",
- "Sindre Sorhus",
- "has-flag",
- "home-or-tmp",
- "Sindre Sorhus",
- "home-or-tmp",
- "import-jsx",
- "Vadim Demedes",
- "import-jsx",
- "ansi-styles",
- "Sindre Sorhus",
- "ansi-styles",
- "chalk",
- "chalk",
- "supports-color",
- "Sindre Sorhus",
- "supports-color",
- "ink",
- "vdemedes",
- "ink",
- "off",
- "invariant",
- "Andres Suarez",
- "invariant",
- "is-ci",
- "Thomas Watson Steen",
- "is-ci",
- "is-finite",
- "Sindre Sorhus",
- "is-finite",
- "is-fullwidth-code-point",
- "Sindre Sorhus",
- "is-fullwidth-code-point",
- "jsesc",
- "Mathias Bynens",
- "jsesc",
- "json5",
- "Aseem Kishore",
- "Max Nanasy",
- "Andrew Eisenberg",
- "Jordan Tucker",
- "json5",
- "js-tokens",
- "Simon Lydell"
- "js-tokens",
- "lcov-parse",
- "lodash",
- "John-David Dalton",
- "John-David Dalton",
- "Mathias Bynens",
- "lodash",
- "lodash.throttle",
- "John-David Dalton",
- "John-David Dalton",
- "Blaine Bublitz",
- "Mathias Bynens",
- "lodash.throttle",
- "log-driver",
- "ansi-escapes",
- "Sindre Sorhus",
- "ansi-escapes",
- "log-update",
- "Sindre Sorhus",
- "log-update",
- "loose-envify",
- "Andres Suarez",
- "loose-envify",
- "mimic-fn",
- "Sindre Sorhus",
-
-
- "mimic-fn",
- "minimatch",
- "Isaac Z. Schlueter",
- "minimatch",
- "minimist",
- "James Halliday",
- "yallist",
- "Isaac Z. Schlueter",
- "yallist",
- "minipass",
- "Isaac Z. Schlueter",
- "minipass",
- "minimist",
- "James Halliday",
- "minimist",
- "mkdirp",
- "James Halliday",
- "mkdirp",
- "ms",
- "ms",
- "number-is-nan",
- "Sindre Sorhus",
- "number-is-nan",
- "object-assign",
- "Sindre Sorhus",
- "object-assign",
- "onetime",
- "Sindre Sorhus",
- "onetime",
- "os-homedir",
- "Sindre Sorhus",
- "os-homedir",
- "os-tmpdir",
- "Sindre Sorhus",
- "os-tmpdir",
- "path-is-absolute",
- "Sindre Sorhus",
- "path-is-absolute",
- "private",
- "Ben Newman",
- "private",
- "prop-types",
- "prop-types",
- "punycode",
- "Mathias Bynens",
- "Mathias Bynens",
- "punycode",
- "react-is",
- "react-is",
- "react",
- "react",
- "react-reconciler",
- "react-reconciler",
- "redeyed",
- "Thorsten Lorenz",
- "redeyed",
- "regenerator-runtime",
- "Ben Newman",
- "regenerator-runtime",
- "repeating",
- "Sindre Sorhus",
- "repeating",
- "resolve-from",
- "Sindre Sorhus",
- "resolve-from",
- "restore-cursor",
- "Sindre Sorhus",
- "restore-cursor",
- "rimraf",
- "scheduler",
- "scheduler",
- "signal-exit",
- "Ben Coe",
- "signal-exit",
- "slash",
- "Sindre Sorhus",
- "slash",
- "slice-ansi",
- "David Caccavella",
- "slice-ansi",
- "ansi-regex",
- "Sindre Sorhus",
- "ansi-regex",
- "strip-ansi",
- "Sindre Sorhus",
- "strip-ansi",
- "string-length",
- "Sindre Sorhus",
- "string-length",
- "ansi-regex",
- "Sindre Sorhus",
- "ansi-regex",
- "strip-ansi",
- "Sindre Sorhus",
- "strip-ansi",
- "string-width",
- "Sindre Sorhus",
- "string-width",
- "strip-ansi",
- "Sindre Sorhus",
- "Sindre Sorhus",
- "Joshua Boy Nicolai Appelman",
- "JD Ballard",
- "strip-ansi",
- "supports-color",
- "Sindre Sorhus",
- "Sindre Sorhus",
- "Joshua Appelman",
- "supports-color",
- "tap-parser",
- "tap-parser",
- "tap-yaml",
- "Isaac Z. Schlueter",
- "tap-yaml",
- "to-fast-properties",
- "Sindre Sorhus",
- "to-fast-properties",
- "ansi-styles",
- "Sindre Sorhus",
- "ansi-styles",
- "chalk",
- "chalk",
- "ms",
- "ms",
- "supports-color",
- "Sindre Sorhus",
- "supports-color",
- "unicode-length",
- "Juan Cruz Viotti",
- "unicode-length",
- "treport",
- "Isaac Z. Schlueter",
- "treport",
- "trim-right",
- "Sindre Sorhus",
- "trim-right",
- "type-fest",
- "Sindre Sorhus",
- "type-fest",
- "@types/prop-types",
- "DovydasNavickas",
- "Ferdy Budhidharma",
- "Sebastian Silbermann",
- "@types/prop-types",
- "@types/react",
- "Asana",
- "AssureSign",
- "Microsoft",
- "John Reilly",
- "Benoit Benezech",
- "Patricio Zavolinsky",
- "Digiguru",
- "Eric Anderson",
- "Dovydas Navickas",
- "Josh Rutherford",
- "Guilherme Hübner",
- "Ferdy Budhidharma",
- "Johann Rakotoharisoa",
- "Olivier Pascal",
- "Martin Hochel",
- "Frank Li",
- "Jessica Franco",
- "Saransh Kataria",
- "Kanitkorn Sujautra",
- "Sebastian Silbermann",
- "@types/react",
- "which",
- "widest-line",
- "Sindre Sorhus",
- "widest-line",
- "ansi-regex",
- "Sindre Sorhus",
- "ansi-regex",
- "ansi-styles",
- "Sindre Sorhus",
- "ansi-styles",
- "string-width",
- "Sindre Sorhus",
- "string-width",
- "strip-ansi",
- "Sindre Sorhus",
- "strip-ansi",
- "wrap-ansi",
- "Sindre Sorhus",
- "wrap-ansi",
- "yaml",
- "Eemeli Aro",
- "yaml",
- "yoga-layout-prebuilt",
- "Vadim Demedes",
- "yoga-layout-prebuilt",
- "tap",
- "tap-parser",
- "tap-yaml",
- "tcompare",
- "test-exclude",
- "^2.0.0"
- "text-table",
- "James Halliday",
- "through",
- "tmp",
- "to-fast-properties",
- "Sindre Sorhus",
- "topo",
- "to-regex-range",
- "trivial-deferred",
- "tslib",
- "ts-node",
- "Blake Embrey",
- "tunnel-agent",
- "tweetnacl",
- "type-check",
- "typedarray-to-buffer",
- "Feross Aboukhadijeh",
- "typescript",
- "0.0.33",
- "latest",
- "commander",
- "uglify-js",
- "ansi-regex",
- "Sindre Sorhus",
- "strip-ansi",
- "Sindre Sorhus",
- "unicode-length",
- "punycode",
- "Mathias Bynens",
- "Mathias Bynens",
- "uri-js",
- "util-deprecate",
- "uuid",
- "validate-npm-package-license",
- "verror",
- "vlq",
- "which-module",
-
- "which",
- "wordwrap",
- "James Halliday",
- "ansi-regex",
- "Sindre Sorhus",
- "is-fullwidth-code-point",
- "Sindre Sorhus",
- "string-width",
- "Sindre Sorhus",
- "strip-ansi",
- "Sindre Sorhus",
- "wrap-ansi",
- "Sindre Sorhus",
- "wrappy",
- "write-file-atomic",
- "rimraf chowncopy good nochmod nochown nofsync nofsyncopt noopen norename \"norename nounlink\" nowrite",
- "write",
- "xml2js",
- "xmlbuilder",
- "y18n",
- "yallist",
- "yaml",
- "yapool",
- "ansi-regex",
- "Sindre Sorhus",
- "cliui",
- "string-width",
- "Sindre Sorhus",
- "strip-ansi",
- "Sindre Sorhus",
- "wrap-ansi",
- "Sindre Sorhus",
- "yargs",
- "Yargs Contributors",
- "^2.0.0",
- "yargs-parser",
- "yn",
- "Sindre Sorhus",
+ "require-uncached@1.0.3"
+ "resolve@1.12.2"
+ "resolve-from@1.0.1"
+ "resolve-from@3.0.0",
+ "resolve-from@4.0.0"
+ "restore-cursor@2.0.0"
+ "restore-cursor@2.0.0",
+ "rimraf@2.6.2"
+ "rimraf@2.7.1"
+ "run-async@2.3.0"
+ "rxjs@6.3.3"
+ "safe-buffer@5.1.1"
+ "safe-buffer@5.1.2"
+ "safe-buffer@5.1.2",
+ "safer-buffer@2.1.2"
+ "sax@1.2.4"
+ "scheduler@0.15.0",
+ "semver@5.6.0"
+ "semver@6.3.0"
+ "set-blocking@2.0.0"
+ "shebang-command@1.2.0"
+ "shebang-regex@1.0.0"
+ "signal-exit@3.0.2"
+ "signal-exit@3.0.2",
+ "slash@1.0.0",
+ "slice-ansi@1.0.0",
+ "slice-ansi@2.0.0"
+ "source-map@0.5.7"
+ "source-map@0.5.7",
+ "source-map@0.6.1"
+ "source-map-support@0.4.18",
+ "source-map-support@0.5.16"
+ "spawn-wrap@1.4.3"
+ "spdx-correct@3.1.0"
+ "spdx-exceptions@2.2.0"
+ "spdx-expression-parse@3.0.0"
+ "spdx-license-ids@3.0.5"
+ "sprintf-js@1.0.3"
+ "sshpk@1.16.0"
+ "stack-utils@1.0.2"
+ "string_decoder@1.1.1"
+ "string-length@2.0.0",
+ "string-width@1.0.2"
+ "string-width@2.1.1"
+ "string-width@2.1.1",
+ "string-width@3.1.0"
+ "string-width@3.1.0",
+ "strip-ansi@3.0.1"
+ "strip-ansi@3.0.1",
+ "strip-ansi@4.0.0"
+ "strip-ansi@4.0.0",
+ "strip-ansi@5.0.0"
+ "strip-ansi@5.2.0"
+ "strip-ansi@5.2.0",
+ "strip-bom@3.0.0"
+ "strip-json-comments@2.0.1"
+ "supports-color@2.0.0",
+ "supports-color@4.4.0"
+ "supports-color@4.5.0"
+ "supports-color@5.5.0",
+ "supports-color@6.1.0"
+ "table@5.1.1"
+ "tap@14.10.1"
+ "tap-mocha-reporter@5.0.0"
+ "tap-parser@10.0.1"
+ "tap-parser@10.0.1",
+ "tap-yaml@1.0.0"
+ "tap-yaml@1.0.0",
+ "tcompare@3.0.0"
+ "test-exclude@5.2.3"
+ "text-table@0.2.0"
+ "through@2.3.8"
+ "tmp@0.0.33"
+ "to-fast-properties@1.0.3",
+ "to-fast-properties@2.0.0"
+ "topo@3.0.3"
+ "to-regex-range@5.0.1"
+ "tough-cookie@2.4.3"
+ "treport@latest",
+ "trim-right@1.0.1",
+ "trivial-deferred@1.0.1"
+ "tslib@1.9.3"
+ "ts-node@8.5.2"
+ "tunnel-agent@0.6.0"
+ "tweetnacl@0.14.5"
+ "type-check@0.3.2"
+ "typedarray-to-buffer@3.1.5"
+ "type-fest@0.5.2",
+ "typescript@3.7.2"
+ "@types/prop-types@15.7.3",
+ "@types/react@16.9.5",
+ "uglify-js@3.6.9"
+ "unicode-length@1.0.3"
+ "unicode-length@2.0.2",
+ "uri-js@4.2.2"
+ "util-deprecate@1.0.2"
+ "uuid@3.3.2"
+ "uuid@3.3.3"
+ "validate-npm-package-license@3.0.4"
+ "verror@1.10.0"
+ "vlq@0.2.3"
+ "which@1.3.1"
+ "which@2.0.2"
+ "which-module@2.0.0"
+ "widest-line@2.0.1",
+ "wordwrap@0.0.3"
+ "wordwrap@1.0.0"
+ "wrap-ansi@2.1.0"
+ "wrap-ansi@5.1.0"
+ "wrap-ansi@5.1.0",
+ "wrappy@1.0.2"
+ "write@0.2.1"
+ "write-file-atomic@2.4.3"
+ "write-file-atomic@3.0.1"
+ "xml2js@0.4.19"
+ "xmlbuilder@9.0.7"
+ "y18n@4.0.0"
+ "yallist@2.1.2"
+ "yallist@4.0.0"
+ "yallist@4.0.0",
+ "yaml@1.7.1",
+ "yaml@1.7.2"
+ "yapool@1.0.0"
+ "yargs@13.3.0"
+ "yargs-parser@13.1.1"
+ "yn@3.1.1"
+ "yoga-layout-prebuilt@1.9.3",
